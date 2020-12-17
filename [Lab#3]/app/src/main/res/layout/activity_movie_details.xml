@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.movies.view.MovieDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/movie_details_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/movie_details_poster"
+                android:layout_width="wrap_content"
+                android:elevation="10dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/movie_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/movie_details_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/movie_details_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/movie_details_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/movie_details_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/movie_details_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/movie_details_favorite_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/add_to_favorite"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="10dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/movie_details_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</ScrollView>

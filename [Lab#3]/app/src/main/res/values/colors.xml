@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMenuDivider">#464646</color>
+    <color name="colorPrimary">#0B2B38</color>
+    <color name="colorPrimaryDark">#081c24</color>
+    <color name="colorAccent">#01d277</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+</resources>

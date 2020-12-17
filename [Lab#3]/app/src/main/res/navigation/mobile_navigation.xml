@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_popular_movies">
+
+    <fragment
+        android:id="@+id/nav_popular_movies"
+        android:name="com.a.tmdbclient.ui.movies.view.PopularMoviesFragment"
+        android:label="Popular Movies"
+        tools:layout="@layout/fragment_movies" />
+
+    <fragment
+        android:id="@+id/nav_top_rated_movies"
+        android:name="com.a.tmdbclient.ui.movies.view.TopRatedMoviesFragment"
+        android:label="Top Rated Movies"
+        tools:layout="@layout/fragment_movies" />
+
+    <fragment
+        android:id="@+id/nav_upcoming_movies"
+        android:name="com.a.tmdbclient.ui.movies.view.UpcomingMoviesFragment"
+        android:label="Upcoming Movies"
+        tools:layout="@layout/fragment_movies" />
+
+    <fragment
+        android:id="@+id/nav_now_playing_movies"
+        android:name="com.a.tmdbclient.ui.movies.view.NowPlayingMoviesFragment"
+        android:label="Now Playing Movies"
+        tools:layout="@layout/fragment_movies" />
+
+    <fragment
+        android:id="@+id/nav_popular_shows"
+        android:name="com.a.tmdbclient.ui.shows.view.PopularShowsFragment"
+        android:label="Popular Shows"
+        tools:layout="@layout/fragment_shows" />
+    <fragment
+        android:id="@+id/nav_upcoming_shows"
+        android:name="com.a.tmdbclient.ui.shows.view.UpcomingShowsFragment"
+        android:label="Upcoming Shows"
+        tools:layout="@layout/fragment_shows" />
+    <fragment
+        android:id="@+id/nav_top_rated_shows"
+        android:name="com.a.tmdbclient.ui.shows.view.TopRatedShowsFragment"
+        android:label="Best Shows"
+        tools:layout="@layout/fragment_shows" />
+    <fragment
+        android:id="@+id/nav_now_playing_shows"
+        android:name="com.a.tmdbclient.ui.shows.view.NowPlayingShowsFragment"
+        android:label="Airing Today Shows"
+        tools:layout="@layout/fragment_shows" />
+
+    <fragment
+        android:id="@+id/nav_people"
+        android:name="com.a.tmdbclient.ui.people.view.PeopleFragment"
+        android:label="@string/menu_peoples"
+        tools:layout="@layout/fragment_peoples" />
+
+    <fragment
+        android:id="@+id/nav_fav_movies"
+        android:name="com.a.tmdbclient.ui.movies.view.FavoriteMoviesFragment"
+        android:label="Favorite Movies"
+        tools:layout="@layout/fragment_peoples" />
+
+</navigation>
